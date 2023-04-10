@@ -5,7 +5,14 @@
 # x = y and y = y - x
 # 
 def gibonacci(n, x, y):
-   #reserved code
+   
+    if n == 0:
+        return x
+    elif n == 1:
+        return y
+    else:
+        return gibonacci(n-1, y, y-x)
+    
     
 #test cases
 # case 1 result is 0
